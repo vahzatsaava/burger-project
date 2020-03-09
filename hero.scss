@@ -1,0 +1,17 @@
+.hero {
+    background: url("./images/black-fon.png") center center / cover no-repeat;
+    color: #fff;
+    position: relative;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    flex: 1.2;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

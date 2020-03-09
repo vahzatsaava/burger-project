@@ -1,0 +1,31 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &--allign--top {
+        justify-content: flex-start;
+        height: 100vh;
+        min-height: 650px;
+    }
+}
+
+.section__title {
+    font-size: 72px;
+    color: #e8b348;
+    margin-bottom: 50px;
+    font-family: "gagalinregular";
+}
+
+.hero__text {
+    margin-bottom: 50px;
+    color: #fff;
+    width: 50%;
+    padding-top: 94px;
+    line-height: 1.1;
+    font-family: "lifehack_basicregular";
+}
+
+.hero__desc {
+    font-size: 65px;
+    font-family: "lifehack_basicregular";
+}

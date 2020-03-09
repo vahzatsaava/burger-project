@@ -1,0 +1,8 @@
+.scroll-down {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
