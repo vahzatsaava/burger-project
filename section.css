@@ -15,6 +15,12 @@
   margin-bottom: 50px;
   font-family: "gagalinregular";
 }
+.section__title--centered {
+  text-align: center;
+}
+.section__title--color--black {
+  color: #333537;
+}
 
 .hero__text {
   margin-bottom: 50px;
@@ -26,6 +32,6 @@
 }
 
 .hero__desc {
-  font-size: 65px;
+  font-size: 52px;
   font-family: "lifehack_basicregular";
 }

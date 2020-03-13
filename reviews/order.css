@@ -1,0 +1,25 @@
+.order__section {
+  background: url("./chalkboard_texture_mc2015_by_mattiamc-d8dbnac.png") center center/cover no-repeat;
+}
+
+.order__row {
+  margin-bottom: 14px;
+  display: flex;
+}
+
+.order__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.order__block:last-child {
+  margin-right: 0px;
+}
+
+.order__title {
+  margin-bottom: 5px;
+}
+
+.order__input {
+  width: 100%;
+  padding: 8px 21px;
+}

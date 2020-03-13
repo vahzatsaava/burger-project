@@ -1,0 +1,53 @@
+.review {
+  position: relative;
+  color: #fff;
+  filter: grayscale(100%);
+}
+.review:hover .review__hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.review__image-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.review__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review__hover {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.review__content {
+  position: absolute;
+  font-family: "ubuntulight";
+  font-size: 14px;
+  top: 80px;
+}
+
+.review__username {
+  position: absolute;
+  font-family: "gagalinregular";
+  top: 60px;
+}
+
+.poser {
+  position: absolute;
+  top: 240px;
+}
