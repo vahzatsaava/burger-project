@@ -1,8 +1,9 @@
 .scroll-down {
+    background: url("./scroll-down/arrow-scroll\ \(1\).svg");
     position: absolute;
-    width: 10px;
-    height: 15px;
-    bottom: 40px;
+    width: 28px;
+    height: 14px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }

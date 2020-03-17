@@ -8,13 +8,21 @@
 }
 
 .features__content {
+  font-family: "ubuntulight";
+}
+
+.features__text {
   font-size: 14px;
   font-family: "ubuntulight";
 }
 
-.features__title {
+h3 {
   font-family: "gagalinregular";
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.help {
+  top: 10px;
 }
 
 ul,

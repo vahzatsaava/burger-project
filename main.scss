@@ -31,7 +31,14 @@
 
 @font-face {
     font-family: 'gagalinregular';
-    src: url('./fonts/ubuntu.regular/11731-webfont.woff2') format('woff2'), url('./fonts/gagalin-regular-webfont.woff') format('woff');
+    src: url('./fonts/gagalin-regular-webfont.woff2') format('woff2'), url('./fonts/gagalin-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lifehack_medium';
+    src: url('./fonts/LifehackItalic-Medium.woff2') format('woff2'), url('./fonts/LifehackItalic-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,18 +46,18 @@
 //normalize
 @import "./normalize.css";
 //section
-@import "./section.css";
-@import "./header.css";
-@import "./menu.css";
-@import "./hero.css";
+@import "./section.scss";
+@import "./header.scss";
+@import "./menu.scss";
+@import "./hero.scss";
 @import "./btn.css";
-@import"./scroll-down.css";
+@import"./scroll-down.scss";
 @import "./features.css";
-@import "feature.css";
-@import "./reviews/review.css";
-@import "./reviews/reviews.css";
-@import "./reviews/order.css";
-@import "./sidebar/sidebar.css";
+@import "./feature.scss";
+@import "./reviews/review.scss";
+@import "./reviews/reviews.scss";
+@import "./reviews/order.scss";
+@import "./sidebar/sidebar.scss";
 .img {
     display: block;
     max-width: 100%;
