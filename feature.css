@@ -1,0 +1,31 @@
+.feature {
+  text-align: center;
+}
+
+.feature__img {
+  display: flex;
+  justify-content: center;
+}
+
+.features__content {
+  font-family: "ubuntulight";
+}
+
+.features__text {
+  font-size: 14px;
+  font-family: "ubuntulight";
+}
+
+h3 {
+  font-family: "gagalinregular";
+  font-size: 20px;
+}
+
+.help {
+  top: 10px;
+}
+
+ul,
+li {
+  list-style: none;
+}

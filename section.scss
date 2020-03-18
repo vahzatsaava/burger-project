@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
+    min-height: 650px;
     &--allign--top {
         justify-content: flex-start;
         height: 100vh;
@@ -14,6 +16,12 @@
     color: #e8b348;
     margin-bottom: 50px;
     font-family: "gagalinregular";
+    &--centered {
+        text-align: center;
+    }
+    &--color--black {
+        color: #333537;
+    }
 }
 
 .hero__text {
@@ -26,6 +34,6 @@
 }
 
 .hero__desc {
-    font-size: 65px;
+    font-size: 52px;
     font-family: "lifehack_basicregular";
 }

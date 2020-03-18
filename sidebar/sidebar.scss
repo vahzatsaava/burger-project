@@ -1,0 +1,50 @@
+        .sidebar__item {
+            display: list-item;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 10%;
+            right: 7%;
+        }
+        
+        .sidebar__link {
+            width: 14px;
+            height: 14px;
+            display: block;
+            position: relative;
+            color: #fff;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                width: 0;
+                height: 0;
+                border: 3px solid #fff;
+                opacity: 0;
+                transition: .3s;
+            }
+            &:hover {
+                width: 8px;
+                height: 8px;
+                opacity: 1;
+            }
+            &::after {
+                width: 6px;
+                height: 6px;
+                background: #fff;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+            }
+        }

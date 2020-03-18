@@ -1,0 +1,27 @@
+.feature {
+    text-align: center;
+}
+
+.feature__img {
+    display: flex;
+    justify-content: center;
+}
+
+.features__content {
+    font-family: "lifehack_basicregular";
+}
+
+.features__text {
+    font-size: 14px;
+    font-family: "ubuntulight";
+}
+
+h3 {
+    font-family: "lifehack_medium";
+    font-size: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+}

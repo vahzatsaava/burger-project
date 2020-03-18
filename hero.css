@@ -2,6 +2,7 @@
   background: url("./images/black-fon.png") center center/cover no-repeat;
   color: #fff;
   position: relative;
+  padding: 15px;
 }
 
 .hero__content {
