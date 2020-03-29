@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     font-family: "ubunturegular";
+    padding-left: 19px;
     &:before {
         content: "";
         display: block;
@@ -34,5 +35,4 @@
     font-size: 14px;
     padding-left: 10px;
     font-family: "ubunturegular";
-    ;
 }

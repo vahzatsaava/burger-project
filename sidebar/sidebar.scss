@@ -1,7 +1,7 @@
         .sidebar__item {
             display: list-item;
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: rem(10px);
         }
         
         .sidebar {
@@ -11,8 +11,8 @@
         }
         
         .sidebar__link {
-            width: 14px;
-            height: 14px;
+            width: rem(14px);
+            height: rem(14px);
             display: block;
             position: relative;
             color: #fff;
@@ -26,18 +26,18 @@
                 border-radius: 50%;
                 width: 0;
                 height: 0;
-                border: 3px solid #fff;
+                border: rem(3px) solid #fff;
                 opacity: 0;
                 transition: .3s;
             }
             &:hover {
-                width: 8px;
-                height: 8px;
+                width: rem(8px);
+                height: rem(8px);
                 opacity: 1;
             }
             &::after {
-                width: 6px;
-                height: 6px;
+                width: rem(6px);
+                height: rem(6px);
                 background: #fff;
                 content: "";
                 display: block;

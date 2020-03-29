@@ -58,12 +58,15 @@
 @import "./reviews/reviews.scss";
 @import "./reviews/order.scss";
 @import "./sidebar/sidebar.scss";
+@import "./media/media.css";
+@import "./team/team.scss";
 .img {
     display: block;
     max-width: 100%;
 }
 
 .container {
-    width: 1100px;
-    margin: 0px auto;
+    max-width: rem(1100px);
+    margin: rem(0px) auto;
+    width: 95%;
 }

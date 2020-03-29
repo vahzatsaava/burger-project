@@ -1,6 +1,7 @@
 @import "./normalize.css";
 @import "./btn.css";
 @import "./features.css";
+@import "./media/media.css";
 @font-face {
   font-family: "gagalinregular";
   src: url("./fonts/gagalin-regular-webfont.woff2") format("woff2"), url("./fonts/gagalin-regular-webfont.woff") format("woff");
@@ -43,18 +44,18 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 .section--allign--top {
   justify-content: flex-start;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .section__title {
-  font-size: 72px;
+  font-size: rem(72px);
   color: #e8b348;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   font-family: "gagalinregular";
 }
 .section__title--centered {
@@ -65,17 +66,21 @@
 }
 
 .hero__text {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   color: #fff;
   width: 50%;
-  padding-top: 94px;
+  padding-top: rem(94px);
   line-height: 1.1;
   font-family: "lifehack_basicregular";
 }
 
 .hero__desc {
-  font-size: 52px;
+  font-size: rem(52px);
   font-family: "lifehack_basicregular";
+}
+
+.hero__img-elem {
+  width: 500px;
 }
 
 .header {
@@ -108,6 +113,7 @@
   display: flex;
   align-items: center;
   font-family: "ubunturegular";
+  padding-left: 19px;
 }
 .menu__item:before {
   content: "";
@@ -153,9 +159,9 @@
 .scroll-down {
   background: url("./scroll-down/arrow-scroll (1).svg");
   position: absolute;
-  width: 28px;
-  height: 14px;
-  bottom: 20px;
+  width: rem(28px);
+  height: rem(14px);
+  bottom: rem(20px);
   left: 50%;
   transform: translateX(-50%);
 }
@@ -174,13 +180,13 @@
 }
 
 .features__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-family: "ubuntulight";
 }
 
 h3 {
   font-family: "lifehack_medium";
-  font-size: 20px;
+  font-size: rem(20px);
 }
 
 ul,
@@ -191,7 +197,7 @@ li {
 .reviews {
   background: #000;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .reviews__list {
@@ -270,31 +276,31 @@ li {
 }
 
 .order__row {
-  margin-bottom: 14px;
+  margin-bottom: rem(14px);
   display: flex;
 }
 
 .order__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 .order__block:last-child {
-  margin-right: 0px;
+  margin-right: rem(0px);
 }
 
 .order__title {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .order__input {
   width: 100%;
-  padding: 8px 21px;
+  padding: rem(8px) rem(21px);
 }
 
 .sidebar__item {
   display: list-item;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 
 .sidebar {
@@ -304,8 +310,8 @@ li {
 }
 
 .sidebar__link {
-  width: 14px;
-  height: 14px;
+  width: rem(14px);
+  height: rem(14px);
   display: block;
   position: relative;
   color: #fff;
@@ -320,18 +326,18 @@ li {
   border-radius: 50%;
   width: 0;
   height: 0;
-  border: 3px solid #fff;
+  border: rem(3px) solid #fff;
   opacity: 0;
   transition: 0.3s;
 }
 .sidebar__link:hover {
-  width: 8px;
-  height: 8px;
+  width: rem(8px);
+  height: rem(8px);
   opacity: 1;
 }
 .sidebar__link::after {
-  width: 6px;
-  height: 6px;
+  width: rem(6px);
+  height: rem(6px);
   background: #fff;
   content: "";
   display: block;
@@ -342,12 +348,28 @@ li {
   border-radius: 50%;
 }
 
+.team {
+  background: url("/back.png") center center/cover no-repeat;
+  position: relative;
+}
+
+.team__section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 5% 2% 0 7%;
+}
+
 .img {
   display: block;
   max-width: 100%;
 }
 
 .container {
-  width: 1100px;
-  margin: 0px auto;
+  max-width: rem(1100px);
+  margin: rem(0px) auto;
+  width: 95%;
 }

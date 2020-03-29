@@ -1,0 +1,14 @@
+.team {
+    background: url("/back.png") center center / cover no-repeat;
+    position: relative;
+}
+
+.team__section {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 50%;
+    background: rgba(#2f3234, .93);
+    padding: 5% 2% 0 7%;
+}

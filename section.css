@@ -3,18 +3,18 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 .section--allign--top {
   justify-content: flex-start;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
 }
 
 .section__title {
-  font-size: 72px;
+  font-size: rem(72px);
   color: #e8b348;
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   font-family: "gagalinregular";
 }
 .section__title--centered {
@@ -25,15 +25,19 @@
 }
 
 .hero__text {
-  margin-bottom: 50px;
+  margin-bottom: rem(50px);
   color: #fff;
   width: 50%;
-  padding-top: 94px;
+  padding-top: rem(94px);
   line-height: 1.1;
   font-family: "lifehack_basicregular";
 }
 
 .hero__desc {
-  font-size: 52px;
+  font-size: rem(52px);
   font-family: "lifehack_basicregular";
+}
+
+.hero__img-elem {
+  width: 500px;
 }
