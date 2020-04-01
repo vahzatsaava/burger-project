@@ -58,15 +58,26 @@
 @import "./reviews/reviews.scss";
 @import "./reviews/order.scss";
 @import "./sidebar/sidebar.scss";
-@import "./media/media.css";
+@import "./media/media.scss";
 @import "./team/team.scss";
+@import "./gamburgers/gamburger.scss";
 .img {
     display: block;
     max-width: 100%;
 }
 
 .container {
-    max-width: rem(1100px);
-    margin: rem(0px) auto;
+    max-width: 1100px;
+    margin: 0px auto;
+    position: relative;
     width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 }

@@ -1,7 +1,6 @@
 @import "./normalize.css";
 @import "./btn.css";
 @import "./features.css";
-@import "./media/media.css";
 @font-face {
   font-family: "gagalinregular";
   src: url("./fonts/gagalin-regular-webfont.woff2") format("woff2"), url("./fonts/gagalin-regular-webfont.woff") format("woff");
@@ -44,19 +43,20 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 650px;
 }
 .section--allign--top {
   justify-content: flex-start;
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 650px;
 }
 
 .section__title {
-  font-size: rem(72px);
+  font-size: 72px;
   color: #e8b348;
-  margin-bottom: rem(50px);
+  margin-bottom: 50px;
   font-family: "gagalinregular";
+  padding-left: 30px;
 }
 .section__title--centered {
   text-align: center;
@@ -66,21 +66,24 @@
 }
 
 .hero__text {
-  margin-bottom: rem(50px);
+  margin-bottom: 50px;
   color: #fff;
   width: 50%;
-  padding-top: rem(94px);
+  padding-top: 94px;
   line-height: 1.1;
   font-family: "lifehack_basicregular";
 }
 
 .hero__desc {
-  font-size: rem(52px);
+  font-size: 52px;
   font-family: "lifehack_basicregular";
+  padding-left: 48px;
 }
 
 .hero__img-elem {
-  width: 500px;
+  width: 30rem;
+  padding-left: 40px;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -113,7 +116,7 @@
   display: flex;
   align-items: center;
   font-family: "ubunturegular";
-  padding-left: 19px;
+  padding-left: 10px;
 }
 .menu__item:before {
   content: "";
@@ -122,14 +125,14 @@
   height: 4px;
   border-radius: 50%;
   background: currentColor;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .menu__item:first-child::before {
   display: none;
 }
 
 .menu__link {
-  margin-left: 20px;
+  margin-left: 18px;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -159,9 +162,9 @@
 .scroll-down {
   background: url("./scroll-down/arrow-scroll (1).svg");
   position: absolute;
-  width: rem(28px);
-  height: rem(14px);
-  bottom: rem(20px);
+  width: 28px;
+  height: 14px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -300,7 +303,7 @@ li {
 .sidebar__item {
   display: list-item;
   color: #fff;
-  margin-bottom: rem(10px);
+  margin-bottom: 10px;
 }
 
 .sidebar {
@@ -310,8 +313,8 @@ li {
 }
 
 .sidebar__link {
-  width: rem(14px);
-  height: rem(14px);
+  width: 14px;
+  height: 14px;
   display: block;
   position: relative;
   color: #fff;
@@ -326,18 +329,18 @@ li {
   border-radius: 50%;
   width: 0;
   height: 0;
-  border: rem(3px) solid #fff;
+  border: 3px solid #fff;
   opacity: 0;
   transition: 0.3s;
 }
 .sidebar__link:hover {
-  width: rem(8px);
-  height: rem(8px);
+  width: 8px;
+  height: 8px;
   opacity: 1;
 }
 .sidebar__link::after {
-  width: rem(6px);
-  height: rem(6px);
+  width: 6px;
+  height: 6px;
   background: #fff;
   content: "";
   display: block;
@@ -349,7 +352,7 @@ li {
 }
 
 .team {
-  background: url("/back.png") center center/cover no-repeat;
+  background: url("./team/teampic.png") center center/cover no-repeat;
   position: relative;
 }
 
@@ -363,13 +366,59 @@ li {
   padding: 5% 2% 0 7%;
 }
 
+.menu_btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+span:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-10px);
+}
+
+.menu_btn-span ::before {
+  transform: translateY(-5px);
+}
+
 .img {
   display: block;
   max-width: 100%;
 }
 
 .container {
-  max-width: rem(1100px);
-  margin: rem(0px) auto;
+  max-width: 1100px;
+  margin: 0px auto;
+  position: relative;
   width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }

@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     font-family: "ubunturegular";
-    padding-left: 19px;
+    padding-left: 10px;
     &:before {
         content: "";
         display: block;
@@ -19,7 +19,7 @@
         height: 4px;
         border-radius: 50%;
         background: currentColor;
-        margin-left: 15px;
+        margin-left: 10px;
     }
     &:first-child {
         &::before {
@@ -29,7 +29,7 @@
 }
 
 .menu__link {
-    margin-left: 20px;
+    margin-left: 18px;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
