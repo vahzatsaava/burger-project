@@ -81,7 +81,6 @@
 }
 
 .hero__img-elem {
-  width: 30rem;
   padding-left: 40px;
   margin-bottom: 20px;
 }
@@ -90,6 +89,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__btns {
@@ -109,7 +109,12 @@
   list-style: none;
   text-decoration: none;
   color: #fff;
-  margin-right: 15px;
+  margin-right: 180px;
+}
+@media screen and (max-width: 768px) {
+  .menu__list {
+    display: none;
+  }
 }
 
 .menu__item {
@@ -125,14 +130,14 @@
   height: 4px;
   border-radius: 50%;
   background: currentColor;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .menu__item:first-child::before {
   display: none;
 }
 
 .menu__link {
-  margin-left: 18px;
+  margin-left: 10px;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -149,8 +154,14 @@
 
 .hero__content {
   display: flex;
-  align-items: center;
-  flex: 1.2;
+  flex: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
 }
 
 .hero__container {
@@ -183,13 +194,13 @@
 }
 
 .features__text {
-  font-size: rem(14px);
+  font-size: 14px;
   font-family: "ubuntulight";
 }
 
 h3 {
   font-family: "lifehack_medium";
-  font-size: rem(20px);
+  font-size: 20px;
 }
 
 ul,
@@ -200,7 +211,7 @@ li {
 .reviews {
   background: #000;
   height: 100vh;
-  min-height: rem(650px);
+  min-height: 13rem;
 }
 
 .reviews__list {
@@ -279,31 +290,36 @@ li {
 }
 
 .order__row {
-  margin-bottom: rem(14px);
+  margin-bottom: 0.28rem;
   display: flex;
 }
 
 .order__block {
   flex: 1;
-  margin-right: rem(20px);
+  margin-right: 0.4rem;
 }
 .order__block:last-child {
-  margin-right: rem(0px);
+  margin-right: 0rem;
 }
 
 .order__title {
-  margin-bottom: rem(5px);
+  margin-bottom: 0.1rem;
 }
 
 .order__input {
   width: 100%;
-  padding: rem(8px) rem(21px);
+  padding: 0.16rem 0.42rem;
 }
 
 .sidebar__item {
   display: list-item;
   color: #fff;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar__item {
+    display: none;
+  }
 }
 
 .sidebar {
@@ -367,39 +383,15 @@ li {
 }
 
 .menu_btn {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  position: relative;
-  left: 0px;
-  top: 0px;
-}
-
-span {
   position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -10px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
+  top: 19px;
+  right: 0px;
+  display: none;
 }
-span:before {
-  position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -10px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  transform: translateY(-10px);
-}
-
-.menu_btn-span ::before {
-  transform: translateY(-5px);
+@media screen and (max-width: 768px) {
+  .menu_btn {
+    display: flex;
+  }
 }
 
 .img {
@@ -421,4 +413,8 @@ span:before {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+}
+
+.body {
+  height: 100%;
 }

@@ -46,6 +46,7 @@
 //normalize
 @import "./normalize.css";
 //section
+@import "./media/media.scss";
 @import "./section.scss";
 @import "./header.scss";
 @import "./menu.scss";
@@ -58,7 +59,6 @@
 @import "./reviews/reviews.scss";
 @import "./reviews/order.scss";
 @import "./sidebar/sidebar.scss";
-@import "./media/media.scss";
 @import "./team/team.scss";
 @import "./gamburgers/gamburger.scss";
 .img {
@@ -80,4 +80,8 @@
     width: 100%;
     min-height: 100%;
     overflow: hidden;
+}
+
+.body {
+    height: 100%;
 }

@@ -1,47 +1,46 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    min-height: 650px;
-    &--allign--top {
-        justify-content: flex-start;
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         min-height: 650px;
+        &--allign--top {
+            justify-content: flex-start;
+            height: 100vh;
+            min-height: 650px;
+        }
     }
-}
-
-.section__title {
-    font-size: 72px;
-    color: #e8b348;
-    margin-bottom: 50px;
-    font-family: "gagalinregular";
-    padding-left: 30px;
-    &--centered {
-        text-align: center;
+    
+    .section__title {
+        font-size: 72px;
+        color: #e8b348;
+        margin-bottom: 50px;
+        font-family: "gagalinregular";
+        padding-left: 30px;
+        &--centered {
+            text-align: center;
+        }
+        &--color--black {
+            color: #333537;
+        }
     }
-    &--color--black {
-        color: #333537;
+    
+    .hero__text {
+        margin-bottom: 50px;
+        color: #fff;
+        width: 50%;
+        padding-top: 94px;
+        line-height: 1.1;
+        font-family: "lifehack_basicregular";
     }
-}
-
-.hero__text {
-    margin-bottom: 50px;
-    color: #fff;
-    width: 50%;
-    padding-top: 94px;
-    line-height: 1.1;
-    font-family: "lifehack_basicregular";
-}
-
-.hero__desc {
-    font-size: 52px;
-    font-family: "lifehack_basicregular";
-    padding-left: 48px;
-}
-
-.hero__img-elem {
-    width: 30rem;
-    padding-left: 40px;
-    margin-bottom: 20px;
-}
+    
+    .hero__desc {
+        font-size: 52px;
+        font-family: "lifehack_basicregular";
+        padding-left: 48px;
+    }
+    
+    .hero__img-elem {
+        padding-left: 40px;
+        margin-bottom: 20px;
+    }

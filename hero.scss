@@ -7,8 +7,12 @@
 
 .hero__content {
     display: flex;
-    align-items: center;
-    flex: 1.2;
+    flex: 0.8;
+    @include tablets {
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
 }
 
 .hero__container {

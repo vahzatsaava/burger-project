@@ -2,6 +2,9 @@
             display: list-item;
             color: #fff;
             margin-bottom: 10px;
+            @include tablets {
+                display: none;
+            }
         }
         
         .sidebar {

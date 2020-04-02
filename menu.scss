@@ -4,7 +4,10 @@
     list-style: none;
     text-decoration: none;
     color: #fff;
-    margin-right: 15px;
+    margin-right: 180px;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__item {
@@ -19,7 +22,7 @@
         height: 4px;
         border-radius: 50%;
         background: currentColor;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     &:first-child {
         &::before {
@@ -29,7 +32,7 @@
 }
 
 .menu__link {
-    margin-left: 18px;
+    margin-left: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
