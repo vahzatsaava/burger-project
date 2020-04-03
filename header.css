@@ -2,10 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__btns {
   display: flex;
   align-items: center;
   color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }

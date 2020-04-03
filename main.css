@@ -54,9 +54,9 @@
 .section__title {
   font-size: 72px;
   color: #e8b348;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-family: "gagalinregular";
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .section__title--centered {
   text-align: center;
@@ -64,25 +64,13 @@
 .section__title--color--black {
   color: #333537;
 }
-
-.hero__text {
-  margin-bottom: 50px;
-  color: #fff;
-  width: 50%;
-  padding-top: 94px;
-  line-height: 1.1;
-  font-family: "lifehack_basicregular";
+.section__title--george {
+  color: #e8b348;
 }
-
-.hero__desc {
-  font-size: 52px;
-  font-family: "lifehack_basicregular";
-  padding-left: 48px;
-}
-
-.hero__img-elem {
-  padding-left: 40px;
-  margin-bottom: 20px;
+.section__title--george include tablets {
+  text-align: center;
+  padding-right: 40px;
+  margin-top: 0px;
 }
 
 .header {
@@ -146,10 +134,10 @@
 }
 
 .hero {
-  background: url("./images/black-fon.png") center center/cover no-repeat;
+  background: url("./images/video-bg.png") center center/cover no-repeat;
   color: #fff;
   position: relative;
-  padding: 15px;
+  padding: 17px;
 }
 
 .hero__content {
@@ -159,8 +147,6 @@
 @media screen and (max-width: 768px) {
   .hero__content {
     flex-direction: column;
-    width: auto;
-    align-items: center;
   }
 }
 
@@ -168,6 +154,42 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.hero__text {
+  margin-bottom: 10px;
+  color: #fff;
+  width: 50%;
+  padding-top: 60px;
+  line-height: 0.9;
+  font-family: "lifehack_basicregular";
+}
+@media screen and (max-width: 768px) {
+  .hero__text {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15%;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+.hero__desc {
+  font-size: 52px;
+  font-family: "lifehack_basicregular";
+  padding-left: 60px;
+}
+@media screen and (max-width: 768px) {
+  .hero__desc {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__img,
+.hero__text {
+    width: auto;
+  }
 }
 
 .scroll-down {
@@ -382,6 +404,42 @@ li {
   padding: 5% 2% 0 7%;
 }
 
+.team-acco__trigger {
+  color: #fff;
+  list-style: none;
+  font-family: "gagalinregular";
+}
+
+.team-acco__item {
+  margin-bottom: 40px;
+}
+
+.team-acco__content {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.team-acco__content__item {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.team_text {
+  width: 60%;
+}
+
+.jeims {
+  margin-right: 50px;
+}
+
+.jeimsphoto {
+  top: 60px;
+}
+
 .menu_btn {
   position: absolute;
   top: 19px;
@@ -406,6 +464,7 @@ li {
   width: 95%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .wrapper {

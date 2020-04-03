@@ -14,33 +14,21 @@
     .section__title {
         font-size: 72px;
         color: #e8b348;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         font-family: "gagalinregular";
-        padding-left: 30px;
+        padding-left: 50px;
         &--centered {
             text-align: center;
         }
         &--color--black {
             color: #333537;
         }
-    }
-    
-    .hero__text {
-        margin-bottom: 50px;
-        color: #fff;
-        width: 50%;
-        padding-top: 94px;
-        line-height: 1.1;
-        font-family: "lifehack_basicregular";
-    }
-    
-    .hero__desc {
-        font-size: 52px;
-        font-family: "lifehack_basicregular";
-        padding-left: 48px;
-    }
-    
-    .hero__img-elem {
-        padding-left: 40px;
-        margin-bottom: 20px;
+        &--george {
+            color: #e8b348;
+            include tablets {
+                text-align: center;
+                padding-right: 40px;
+                margin-top: 0px;
+            }
+        }
     }

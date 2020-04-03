@@ -1,22 +1,52 @@
-.hero {
-    background: url("./images/black-fon.png") center center / cover no-repeat;
-    color: #fff;
-    position: relative;
-    padding: 15px;
-}
-
-.hero__content {
-    display: flex;
-    flex: 0.8;
-    @include tablets {
-        flex-direction: column;
-        width: auto;
-        align-items: center;
+    .hero {
+        background: url("./images/video-bg.png") center center / cover no-repeat;
+        color: #fff;
+        position: relative;
+        padding: 17px;
     }
-}
-
-.hero__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+    
+    .hero__content {
+        display: flex;
+        flex: 0.8;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .hero__text {
+        margin-bottom: 10px;
+        color: #fff;
+        width: 50%;
+        padding-top: 60px;
+        line-height: 0.9;
+        font-family: "lifehack_basicregular";
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 15%;
+            padding-left: 0px;
+            text-align: center;
+        }
+    }
+    
+    .hero__desc {
+        font-size: 52px;
+        font-family: "lifehack_basicregular";
+        padding-left: 60px;
+        @include tablets {
+            margin: 0px;
+        }
+    }
+    
+    .hero__img,
+    .hero__text {
+        @include tablets {
+            width: auto;
+        }
+    }
