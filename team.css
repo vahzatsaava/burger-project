@@ -17,6 +17,7 @@
   color: #fff;
   list-style: none;
   font-family: "gagalinregular";
+  font-size: 14px;
 }
 
 .team-acco__item {
@@ -39,12 +40,18 @@
 
 .team_text {
   width: 60%;
+  font-family: "ubuntulight";
 }
 
 .jeims {
   margin-right: 50px;
+  font-family: "ubuntulight";
 }
 
 .jeimsphoto {
   top: 60px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,7 +1,7 @@
 .reviews {
     background: #000;
     height: 100vh;
-    min-height: rem(650px);
+    min-height: 650px;
 }
 
 .reviews__list {
@@ -15,4 +15,9 @@
 .reviews__item {
     width: 25%;
     height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+        text-align: center;
+    }
 }

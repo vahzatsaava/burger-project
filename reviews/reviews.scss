@@ -34,6 +34,10 @@
     opacity: 0;
     transform: scale(.8);
     transition: .3s;
+    @include tablets {
+        padding-top: 120px;
+        text-align: center;
+    }
 }
 
 .review__content {

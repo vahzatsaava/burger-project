@@ -48,5 +48,13 @@
     .hero__text {
         @include tablets {
             width: auto;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    .hero__img {
+        @include tablets {
+            padding-right: 40px;
         }
     }
