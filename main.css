@@ -543,16 +543,25 @@ a {
   height: 100vh;
 }
 
-.menu {
+.menus {
+  background: url(./images/eatingmenu/background555.png) center center/cover no-repeat;
+  color: #fff;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
   position: relative;
+  flex-direction: row;
 }
 
 .section__title {
   font-size: 72px;
   color: #f9b43f;
+}
+
+.menu__title {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 .menu-acco {
@@ -562,7 +571,6 @@ a {
 .menu-acco__item {
   display: flex;
   height: 100%;
-  border: 1px solid black;
 }
 
 .menu-acco__trigger {
@@ -573,7 +581,20 @@ a {
   text-decoration: none;
 }
 
+.meat {
+  background: url(./images/eatingmenu/meateating.png) center center/cover no-repeat;
+}
+
+.vegan {
+  background: url(./images/eatingmenu/vegan.png) center center/cover no-repeat;
+}
+
+.dietic {
+  background: url(./images/eatingmenu/dietic.png) center center/cover no-repeat;
+}
+
 .menu-acco__trigger-text {
+  font-family: "gagalinregular";
   font-size: 40px;
   color: black;
   text-align: center;
@@ -598,6 +619,11 @@ a {
   color: #fff;
   padding: 60px 30px;
   display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-acco__text {
+    display: none;
+  }
 }
 
 .img {
