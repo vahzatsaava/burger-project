@@ -200,7 +200,7 @@
 
 .btn {
   position: absolute;
-  background: red;
+  background: orangered;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
@@ -327,7 +327,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .review__hover {
-    padding-top: 120px;
+    padding-top: 6%;
     text-align: center;
   }
 }
@@ -355,14 +355,49 @@ li {
 }
 
 .order__section {
-  background: url("./chalkboard_texture_mc2015_by_mattiamc-d8dbnac.png") center center/cover no-repeat;
+  background: url("./images/team/blacks.png") center center/cover no-repeat;
   height: 100vh;
   min-height: 650px;
+  color: #fff;
+  position: relative;
+}
+
+.order {
+  position: relative;
+  top: 8%;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .order {
+    flex-direction: column;
+  }
+}
+
+.orderleft {
+  position: absolute;
+  right: 53%;
+  top: 40%;
+  width: 45%;
+}
+
+.comments {
+  position: absolute;
+  left: 53%;
+  display: flex;
+  flex-direction: column;
+  top: 5px;
+  width: 50%;
 }
 
 .order__row {
-  margin-bottom: 14px;
+  margin-bottom: 30px;
   display: flex;
+}
+
+.wrap-messege {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .order__block {
@@ -380,6 +415,69 @@ li {
 .order__input {
   width: 100%;
   padding: 8px 21px;
+}
+
+.radio {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.radio label {
+  position: relative;
+  padding-left: 40px;
+  line-height: 20px;
+}
+
+.radio input {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-control {
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border-radius: 50%;
+}
+
+.form-element {
+  width: 500px;
+  height: 120px;
+}
+
+.dabl {
+  position: absolute;
+  background: orangered;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 13px;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  right: 450px;
+  font-family: "ubunturegular";
+  top: 110%;
+}
+
+.cleaning {
+  position: absolute;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 13px;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  right: 340px;
+  font-family: "ubunturegular";
+  top: 110%;
 }
 
 .sidebar__item {
@@ -504,7 +602,7 @@ li {
 }
 
 .team_text {
-  width: 60%;
+  width: 100%;
   font-family: "ubuntulight";
 }
 
@@ -566,6 +664,8 @@ a {
 
 .menu-acco {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-acco__item {
@@ -613,17 +713,17 @@ a {
   background: #2f3234;
   width: 0;
 }
+@media screen and (max-width: 768px) {
+  .menu-acco__content {
+    display: none;
+  }
+}
 
 .menu-acco__text {
   font-size: 14px;
   color: #fff;
   padding: 60px 30px;
   display: none;
-}
-@media screen and (max-width: 768px) {
-  .menu-acco__text {
-    display: none;
-  }
 }
 
 .img {

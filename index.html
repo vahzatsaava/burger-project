@@ -291,43 +291,71 @@
             <div class="container">
                 <h2 class="section__title section__title--centered">Закажите доставку</h2>
                 <form class="order">
-                    <div class="order__row">
-                        <label class="order__block">
+                    <div class="orderleft">
+                        <div class="order__row">
+                            <label class="order__block">
                 <div class="order__title">имя</div>
                 <input type="text" class="order__input">
             </label>
-                        <label class="order__block">
+                            <label class="order__block">
                 <div class="order__title">телефон</div>
-                <input type="text" class="order__input">
+                <input type="text" class="order__input"placeholder="+7-9996054534">
             </label>
-                    </div>
-                    <div class="order__row">
-                        <label class="order__block">
+                        </div>
+                        <div class="order__row">
+                            <label class="order__block">
                 <div class="order__title">улица</div>
                 <input type="text" class="order__input">
             </label>
-                    </div>
-                    <div class="order__row">
-                        <label class="order__block">
+                        </div>
+                        <div class="order__row">
+                            <label class="order__block">
                 <div class="order__title">Дом</div>
                 <input type="text" class="order__input">
             </label>
-                        <label class="order__block">
+                            <label class="order__block">
                 <div class="order__title">Корпус</div>
                 <input type="text" class="order__input">
             </label>
-                        <label class="order__block">
+                            <label class="order__block">
                 <div class="order__title">Квартира</div>
                 <input type="text" class="order__input">
             </label>
-                        <label class="order__block">
+                            <label class="order__block">
                 <div class="order__title">Этаж</div>
                 <input type="text" class="order__input">
+                        
+                            </div>
             </label>
-                    </div>
+                        </div>
 
+                        <div class="comments">
+                            <div class="wrap-messege">
+                                <label for="messege">Комментарий</label>
+                                <textarea class="form-element"></textarea>
+
+                            </div>
+                            <div class="radio">
+                                <label class="order__block">
+                          <input type="radio"  value="потребуется сдача" > потребуется сдача
+                          <div class="radio-control pay"></div>
+                        
+                        </label>
+                                <label class="order__block">
+                          <input type="radio" value="оплата по карте">оплата по карте 
+                          <div class="radio-control notpay"></div>
+                        </label>
+                            </div>
+                            <div class="checking">
+                                <input type="checkbox" name="service" value="calling" class="call"> не перезванивать
+
+                            </div>
+                            <a href="#" class="btn dabl">Заказать</a>
+                            <a href="#" class="btn cleaning">Очистить</a>
+                        </div>
+                        <div>
                 </form>
-            </div>
+                </div>
         </section>
 
         <nav class="sidebar">
@@ -358,7 +386,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+        </div>
 
 </body>
 

@@ -1,27 +1,123 @@
-.order__section {
-    background: url("./chalkboard_texture_mc2015_by_mattiamc-d8dbnac.png") center center/ cover no-repeat;
-    height: 100vh;
-    min-height: 650px;
-}
-
-.order__row {
-    margin-bottom: 14px;
-    display: flex;
-}
-
-.order__block {
-    flex: 1;
-    margin-right: 20px;
-    &:last-child {
-        margin-right: 0px;
+    .order__section {
+        background: url("./images/team/blacks.png") center center/ cover no-repeat;
+        height: 100vh;
+        min-height: 650px;
+        color: #fff;
+        position: relative;
     }
-}
-
-.order__title {
-    margin-bottom: 5px;
-}
-
-.order__input {
-    width: 100%;
-    padding: 8px 21px;
-}
+    
+    .order {
+        position: relative;
+        top: 8%;
+        display: flex;
+        @include tablets {
+            flex-direction: column;
+        }
+    }
+    
+    .orderleft {
+        position: absolute;
+        right: 53%;
+        top: 40%;
+        width: 45%;
+    }
+    
+    .comments {
+        position: absolute;
+        left: 53%;
+        display: flex;
+        flex-direction: column;
+        top: 5px;
+        width: 50%;
+    }
+    
+    .order__row {
+        margin-bottom: 30px;
+        display: flex;
+    }
+    
+    .wrap-messege {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .order__block {
+        flex: 1;
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    
+    .order__title {
+        margin-bottom: 5px;
+    }
+    
+    .order__input {
+        width: 100%;
+        padding: 8px 21px;
+    }
+    
+    .radio {
+        display: flex;
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+    
+    .radio label {
+        position: relative;
+        padding-left: 40px;
+        line-height: 20px;
+    }
+    
+    .radio input {
+        position: absolute;
+        opacity: 0;
+    }
+    
+    .radio-control {
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background: #e6e6e6;
+        border-radius: 50%;
+    }
+    
+    .form-element {
+        width: 500px;
+        height: 120px;
+    }
+    
+    .dabl {
+        position: absolute;
+        background: orangered;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 13px;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 15px;
+        right: 450px;
+        font-family: "ubunturegular";
+        top: 110%;
+    }
+    
+    .cleaning {
+        position: absolute;
+        background: transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-size: 13px;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 15px;
+        right: 340px;
+        font-family: "ubunturegular";
+        top: 110%;
+    }

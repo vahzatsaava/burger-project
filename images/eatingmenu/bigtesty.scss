@@ -26,6 +26,8 @@
 
 .menu-acco {
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .menu-acco__item {
@@ -72,6 +74,9 @@
     overflow: hidden;
     background: #2f3234;
     width: 0;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu-acco__text {
@@ -79,7 +84,4 @@
     color: #fff;
     padding: 60px 30px;
     display: none;
-    @include tablets {
-        display: none;
-    }
 }
