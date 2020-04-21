@@ -31,10 +31,14 @@
                 margin-top: 0px;
             }
         }
+        @include phones {
+            text-align: center;
+        }
     }
     
     .section__title {
         @include phones {
             font-size: 10px;
+            text-align: center;
         }
     }

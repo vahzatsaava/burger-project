@@ -70,10 +70,16 @@
   padding-right: 40px;
   margin-top: 0px;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .section__title {
     font-size: 10px;
+    text-align: center;
   }
 }
 
@@ -631,6 +637,11 @@ li {
 .team-acco__item {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 480px) {
+  .team-acco__item {
+    margin-bottom: 30px;
+  }
+}
 
 .team-acco__content {
   display: flex;
@@ -647,6 +658,11 @@ li {
     padding: 0 20%;
   }
 }
+@media screen and (max-width: 480px) {
+  .team-acco__content {
+    text-align: center;
+  }
+}
 
 .team-acco__content__item {
   text-align: center;
@@ -658,6 +674,11 @@ li {
     align-items: center;
     text-align: center;
     padding-right: 130px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .team-acco__content__item {
+    text-align: center;
   }
 }
 
@@ -737,6 +758,11 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .menu-acco {
+    width: 45%;
+  }
 }
 
 .menu-acco__item {

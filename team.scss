@@ -29,6 +29,9 @@
 
 .team-acco__item {
     margin-bottom: 40px;
+    @include phones {
+        margin-bottom: 30px;
+    }
 }
 
 .team-acco__content {
@@ -43,6 +46,9 @@
         text-align: center;
         padding: 0 20%;
     }
+    @include phones {
+        text-align: center;
+    }
 }
 
 .team-acco__content__item {
@@ -53,6 +59,9 @@
         align-items: center;
         text-align: center;
         padding-right: 130px;
+    }
+    @include phones {
+        text-align: center;
     }
 }
 
