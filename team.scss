@@ -52,12 +52,16 @@
     @include tablets {
         align-items: center;
         text-align: center;
+        padding-right: 130px;
     }
 }
 
 .team_text {
     width: 100%;
     font-family: "ubuntulight";
+    @include tablets {
+        padding-left: 70px;
+    }
 }
 
 .jeims {
@@ -75,5 +79,11 @@ a {
         align-items: center;
         text-align: center;
         padding: 0 18%;
+    }
+}
+
+.jeimsphoto {
+    @include tablets {
+        padding-right: 150px;
     }
 }

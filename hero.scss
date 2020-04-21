@@ -42,6 +42,9 @@
         @include tablets {
             margin: 0px;
         }
+        @include phones {
+            font-size: 48px;
+        }
     }
     
     .hero__img,

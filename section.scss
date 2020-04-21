@@ -32,3 +32,9 @@
             }
         }
     }
+    
+    .section__title {
+        @include phones {
+            font-size: 10px;
+        }
+    }

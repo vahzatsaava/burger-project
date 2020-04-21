@@ -11,6 +11,9 @@
             position: fixed;
             top: 10%;
             right: 7%;
+            @include phones {
+                display: none;
+            }
         }
         
         .sidebar__link {

@@ -71,6 +71,12 @@
   margin-top: 0px;
 }
 
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 10px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -182,6 +188,11 @@
     margin: 0px;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__desc {
+    font-size: 48px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .hero__img,
@@ -240,8 +251,27 @@
   text-align: center;
 }
 
-.feature__img {
+.features__list {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .features__list {
+    flex-direction: column;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+  .features__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feature__img {
   justify-content: center;
 }
 
@@ -327,7 +357,6 @@ li {
 }
 @media screen and (max-width: 768px) {
   .review__hover {
-    padding-top: 6%;
     text-align: center;
   }
 }
@@ -353,18 +382,23 @@ li {
   position: absolute;
   top: 240px;
 }
+@media screen and (max-width: 768px) {
+  .poser {
+    padding-top: 0;
+    margin: 0;
+  }
+}
 
 .order__section {
   background: url("./images/team/blacks.png") center center/cover no-repeat;
   height: 100vh;
   min-height: 650px;
   color: #fff;
-  position: relative;
 }
 
 .order {
-  position: relative;
-  top: 8%;
+  width: 100%;
+  padding-top: 8%;
   display: flex;
 }
 @media screen and (max-width: 768px) {
@@ -374,24 +408,36 @@ li {
 }
 
 .orderleft {
-  position: absolute;
-  right: 53%;
-  top: 40%;
-  width: 45%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .orderleft {
+    justify-content: center;
+    padding-left: 60px;
+    width: 80%;
+  }
 }
 
 .comments {
-  position: absolute;
-  left: 53%;
   display: flex;
   flex-direction: column;
-  top: 5px;
+  padding-left: 50px;
+  padding-top: 5px;
+  position: relative;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .comments {
+    justify-content: center;
+  }
 }
 
 .order__row {
   margin-bottom: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 .wrap-messege {
@@ -415,6 +461,8 @@ li {
 .order__input {
   width: 100%;
   padding: 8px 21px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .radio {
@@ -448,6 +496,12 @@ li {
 .form-element {
   width: 500px;
   height: 120px;
+}
+@media screen and (max-width: 768px) {
+  .form-element {
+    width: 450px;
+    padding-left: 150px;
+  }
 }
 
 .dabl {
@@ -495,6 +549,11 @@ li {
   position: fixed;
   top: 10%;
   right: 7%;
+}
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .sidebar__link {
@@ -598,12 +657,18 @@ li {
   .team-acco__content__item {
     align-items: center;
     text-align: center;
+    padding-right: 130px;
   }
 }
 
 .team_text {
   width: 100%;
   font-family: "ubuntulight";
+}
+@media screen and (max-width: 768px) {
+  .team_text {
+    padding-left: 70px;
+  }
 }
 
 .jeims {
@@ -621,6 +686,12 @@ a {
     align-items: center;
     text-align: center;
     padding: 0 18%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jeimsphoto {
+    padding-right: 150px;
   }
 }
 

@@ -35,7 +35,6 @@
     transform: scale(.8);
     transition: .3s;
     @include tablets {
-        padding-top: 6%;
         text-align: center;
     }
 }
@@ -60,4 +59,8 @@
 .poser {
     position: absolute;
     top: 240px;
+    @include tablets {
+        padding-top: 0;
+        margin: 0;
+    }
 }
