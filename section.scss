@@ -25,20 +25,17 @@
         }
         &--george {
             color: #e8b348;
-            include tablets {
-                text-align: center;
-                padding-right: 40px;
-                margin-top: 0px;
-            }
-        }
-        @include phones {
-            text-align: center;
         }
     }
     
     .section__title {
         @include phones {
             font-size: 10px;
+        }
+        @include tablets {
             text-align: center;
+            padding-right: 40px;
+            margin-top: 0px;
+            font-size: 15px;
         }
     }
