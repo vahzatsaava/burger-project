@@ -1,0 +1,9 @@
+.menu_btn {
+    position: absolute;
+    top: 19px;
+    right: 0px;
+    display: none;
+    @include tablets {
+        display: flex;
+    }
+}

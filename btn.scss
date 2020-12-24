@@ -1,5 +1,6 @@
 .btn {
-    background: red;
+    position: absolute;
+    background: orangered;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
@@ -7,6 +8,7 @@
     display: inline-block;
     color: #fff;
     padding: 10px 15px;
-    margin-left: 15px;
+    margin-left: 20px;
+    right: 40px;
     font-family: "ubunturegular";
 }

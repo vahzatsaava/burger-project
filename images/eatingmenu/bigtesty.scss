@@ -1,0 +1,90 @@
+.section {
+    min-height: 650px;
+    height: 100vh;
+}
+
+.menus {
+    background: url(./images/eatingmenu/background555.png) center center / cover no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    flex-direction: row;
+}
+
+.section__title {
+    font-size: 72px;
+    color: #f9b43f;
+}
+
+.menu__title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.menu-acco {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    @include phones {
+        width: 45%;
+    }
+}
+
+.menu-acco__item {
+    display: flex;
+    height: 100%;
+}
+
+.menu-acco__trigger {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 100%;
+    text-decoration: none;
+}
+
+.meat {
+    background: url(./images/eatingmenu/meateating.png) center center /cover no-repeat;
+}
+
+.vegan {
+    background: url(./images/eatingmenu/vegan.png)center center /cover no-repeat;
+}
+
+.dietic {
+    background: url(./images/eatingmenu/dietic.png)center center /cover no-repeat;
+}
+
+.menu-acco__trigger-text {
+    font-family: "gagalinregular";
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    white-space: nowrap;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    margin-top: -20px;
+}
+
+.menu-acco__content {
+    height: 100%;
+    overflow: hidden;
+    background: #2f3234;
+    width: 0;
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu-acco__text {
+    font-size: 14px;
+    color: #fff;
+    padding: 60px 30px;
+    display: none;
+}

@@ -1,39 +1,41 @@
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    min-height: 650px;
-    &--allign--top {
-        justify-content: flex-start;
+    .section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         min-height: 650px;
+        &--allign--top {
+            justify-content: flex-start;
+            height: 100vh;
+            min-height: 650px;
+        }
     }
-}
-
-.section__title {
-    font-size: 72px;
-    color: #e8b348;
-    margin-bottom: 50px;
-    font-family: "gagalinregular";
-    &--centered {
-        text-align: center;
+    
+    .section__title {
+        font-size: 72px;
+        color: #e8b348;
+        margin-bottom: 10px;
+        font-family: "gagalinregular";
+        padding-left: 50px;
+        &--centered {
+            text-align: center;
+        }
+        &--color--black {
+            color: #333537;
+        }
+        &--george {
+            color: #e8b348;
+        }
     }
-    &--color--black {
-        color: #333537;
+    
+    .section__title {
+        @include phones {
+            font-size: 10px;
+        }
+        @include tablets {
+            text-align: center;
+            padding-right: 40px;
+            margin-top: 0px;
+            font-size: 15px;
+        }
     }
-}
-
-.hero__text {
-    margin-bottom: 50px;
-    color: #fff;
-    width: 50%;
-    padding-top: 94px;
-    line-height: 1.1;
-    font-family: "lifehack_basicregular";
-}
-
-.hero__desc {
-    font-size: 52px;
-    font-family: "lifehack_basicregular";
-}

@@ -2,8 +2,23 @@
     text-align: center;
 }
 
-.feature__img {
+.features__list {
     display: flex;
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.features__item {
+    display: flex;
+    flex-direction: column;
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.feature__img {
     justify-content: center;
 }
 

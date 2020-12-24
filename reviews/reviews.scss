@@ -34,6 +34,9 @@
     opacity: 0;
     transform: scale(.8);
     transition: .3s;
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .review__content {
@@ -56,4 +59,8 @@
 .poser {
     position: absolute;
     top: 240px;
+    @include tablets {
+        padding-top: 0;
+        margin: 0;
+    }
 }

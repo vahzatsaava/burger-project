@@ -4,13 +4,17 @@
     list-style: none;
     text-decoration: none;
     color: #fff;
-    margin-right: 15px;
+    margin-right: 180px;
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__item {
     display: flex;
     align-items: center;
     font-family: "ubunturegular";
+    padding-left: 10px;
     &:before {
         content: "";
         display: block;
@@ -18,7 +22,7 @@
         height: 4px;
         border-radius: 50%;
         background: currentColor;
-        margin-left: 15px;
+        margin-left: 5px;
     }
     &:first-child {
         &::before {
@@ -28,11 +32,10 @@
 }
 
 .menu__link {
-    margin-left: 20px;
+    margin-left: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
     padding-left: 10px;
     font-family: "ubunturegular";
-    ;
 }

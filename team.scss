@@ -1,0 +1,98 @@
+.team {
+    background: url("./team/teampic.png") center center / cover no-repeat;
+    position: relative;
+}
+
+.team__section {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 50%;
+    background: rgba(#2f3234, .93);
+    padding: 5% 2% 0 7%;
+    @include tablets {
+        left: 0;
+        text-align: center;
+    }
+}
+
+.team-acco__trigger {
+    color: #fff;
+    list-style: none;
+    font-family: "gagalinregular";
+    font-size: 14px;
+    @include tablets {
+        display: inline-flex;
+    }
+}
+
+.team-acco__item {
+    margin-bottom: 40px;
+    @include phones {
+        margin-bottom: 30px;
+    }
+}
+
+.team-acco__content {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20%;
+    }
+    @include phones {
+        text-align: center;
+    }
+}
+
+.team-acco__content__item {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    @include tablets {
+        align-items: center;
+        text-align: center;
+        padding-right: 130px;
+    }
+    @include phones {
+        text-align: center;
+    }
+}
+
+.team_text {
+    width: 100%;
+    font-family: "ubuntulight";
+    @include tablets {
+        padding-left: 70px;
+    }
+}
+
+.jeims {
+    margin-right: 50px;
+    font-family: "ubuntulight";
+}
+
+a {
+    text-decoration: none;
+}
+
+.team-acco {
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 18%;
+    }
+}
+
+.jeimsphoto {
+    @include tablets {
+        padding-right: 150px;
+    }
+}

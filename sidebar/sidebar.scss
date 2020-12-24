@@ -2,12 +2,18 @@
             display: list-item;
             color: #fff;
             margin-bottom: 10px;
+            @include tablets {
+                display: none;
+            }
         }
         
         .sidebar {
             position: fixed;
             top: 10%;
             right: 7%;
+            @include phones {
+                display: none;
+            }
         }
         
         .sidebar__link {

@@ -1,0 +1,57 @@
+.team {
+  background: url("./team/teampic.png") center center/cover no-repeat;
+  position: relative;
+}
+
+.team__section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 5% 2% 0 7%;
+}
+
+.team-acco__trigger {
+  color: #fff;
+  list-style: none;
+  font-family: "gagalinregular";
+  font-size: 14px;
+}
+
+.team-acco__item {
+  margin-bottom: 40px;
+}
+
+.team-acco__content {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.team-acco__content__item {
+  text-align: center;
+  align-items: center;
+  width: 50%;
+}
+
+.team_text {
+  width: 60%;
+  font-family: "ubuntulight";
+}
+
+.jeims {
+  margin-right: 50px;
+  font-family: "ubuntulight";
+}
+
+.jeimsphoto {
+  top: 60px;
+}
+
+a {
+  text-decoration: none;
+}

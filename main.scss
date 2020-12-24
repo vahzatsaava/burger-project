@@ -46,24 +46,44 @@
 //normalize
 @import "./normalize.css";
 //section
+@import "./media/media.scss";
 @import "./section.scss";
 @import "./header.scss";
 @import "./menu.scss";
 @import "./hero.scss";
-@import "./btn.css";
+@import "./btn.scss";
 @import"./scroll-down.scss";
-@import "./features.css";
+@import "./features.scss";
 @import "./feature.scss";
 @import "./reviews/review.scss";
 @import "./reviews/reviews.scss";
 @import "./reviews/order.scss";
 @import "./sidebar/sidebar.scss";
+@import "./team.scss";
+@import "./gamburgers/gamburger.scss";
+@import "./images/eatingmenu/bigtesty.scss";
 .img {
     display: block;
     max-width: 100%;
 }
 
 .container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0px auto;
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.body {
+    height: 100%;
 }
